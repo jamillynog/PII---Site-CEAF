@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='reserva.css' rel='stylesheet'>
+    <title>Faça sua reserva</title>
+</head>
+
+<body>
+    <div id="reserva" class="section">
+        <div class="section-center">
+            <div class="container">
+                <div class="row">
+                    <div class="reserva-form">
+                        <div class="form-header">
+                            <h1>Faça sua reserva</h1>
+                        </div>
+
+                        <form>
+                            <div class="row">
+                                <h4 class="letra">Selecione a data e o horário:</h4>
+                                <div class="col-md-6">
+                                    <div class="grupo">
+                                        <div class="data">
+                                            <input class="form-control" type="date" required>
+                                            <span class="form-label">Dia</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="grupo">
+                                        <div class="container-hora">
+                                            <div class="hora">
+                                                <input class="form-control" type="time" required>
+                                            </div>
+                                            <div class="hora">
+                                                <input class="form-control" type="time" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="grupo">
+                                        <label class="esporte">Esporte:</label>
+                                        <select class="form-control select-esporte" required>
+                                            <option value="" selected hidden>Esporte</option>
+                                            <option>Futebol</option>
+                                            <option>Futsal</option>
+                                            <option>Vôlei</option>
+                                            <option>Basquete</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="grupo">
+                                        <label class="material">Material de apoio:</label>
+                                        <select class="form-control select-material" required>
+                                            <option value="" selected hidden>Selecione uma opção</option>
+                                            <option>Coletes</option>
+                                            <option>Bola</option>
+                                            <option>Não será preciso</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <section>
+                                        <div class="terms">
+                                            <h5>Termos de Uso</h5>
+                                            <p>Por favor, leia e aceite os <a href="#">termos de uso:</a></p>
+                                            <div class="termos-container">
+                                                <label>
+                                                    <input type="checkbox" name="termos" required>
+                                                    Eu aceito os termos de uso.
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="form-btn">
+                                <button class="submit-btn">Reservar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
