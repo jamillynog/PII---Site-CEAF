@@ -276,3 +276,17 @@
     .reserva-form .submit-btn:focus {
         opacity: 0.9;
     }
+
+    @media screen and (max-width: 959px) {
+        .reserva-form {
+            max-width: 421px;
+            width: 100%;
+            margin: auto;
+            padding: 40px;
+            overflow: hidden;
+            background-size: cover;
+            border-radius: 5px;
+            z-index: 20;
+            display: flex;
+        }
+    }
