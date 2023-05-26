@@ -7,7 +7,6 @@
     <link href='reserva.css' rel='stylesheet'>
     <title>Faça sua reserva</title>
 </head>
-
 <body>
     <div id="reserva" class="section">
         <div class="section-center">
@@ -15,12 +14,15 @@
                 <div class="row">
                     <div class="reserva-form">
                         <div class="form-header">
-                            <h1>Faça sua reserva</h1>
+                            <h1>Faça sua reserva!</h1>
                         </div>
-
                         <form>
                             <div class="row">
-                                <h4 class="letra">Selecione a data e o horário:</h4>
+                                <div class="col-md-6">
+                                    <h4 class="letra">Selecione a data e o horário:</h4>
+                                </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-md-6">
                                     <div class="grupo">
                                         <div class="data">
@@ -43,7 +45,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <div class="grupo">
                                         <label class="esporte">Esporte:</label>
                                         <select class="form-control select-esporte" required>
@@ -55,7 +57,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <div class="grupo">
                                         <label class="material">Material de apoio:</label>
                                         <select class="form-control select-material" required>
@@ -92,6 +94,8 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 </body>
-
 </html>
