@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href='reserva.css' rel='stylesheet'>
     <title>Faça sua reserva</title>
 </head>
+
 <body>
     <div id="reserva" class="section">
         <div class="section-center">
@@ -74,7 +76,8 @@
                                     <section>
                                         <div class="terms">
                                             <h5>Termos de Uso</h5>
-                                            <p>Por favor, leia e aceite os <a href="#">termos de uso:</a></p>
+                                            <p>Por favor, leia e aceite os <a href="#" id="termos-link">termos de
+                                                    uso:</a></p>
                                             <div class="termos-container">
                                                 <label>
                                                     <input type="checkbox" name="termos" required>
@@ -94,8 +97,41 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="termos" tabindex="-1" role="dialog" aria-labelledby="termosLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="termosLabel">Termos de Uso</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Ao reservar uma quadra ou campo de futebol no CEAF do Instituto Mauá de Tecnologia, você
+                        concorda em seguir todas as regras e regulamentos estabelecidos pelo CEAF. Isso inclui o
+                        uso adequado das instalações e equipamentos, bem como o respeito aos outros usuários.
+                        Qualquer dano às instalações ou equipamentos será de responsabilidade do usuário que fez
+                        a reserva. Além disso, o usuário concorda em cumprir o horário de entrada e saída reservado
+                        e em devolver todos os materiais de apoio emprestados em boas condições.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById("termos-link").addEventListener("click", function (event) {
+            event.preventDefault();
+
+            $('#termos').modal('show');
+        });
+    </script>
 </body>
+
 </html>
