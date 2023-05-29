@@ -44,9 +44,12 @@ body {
     line-height: 42px;
     padding: 0;
     border: none;
-    margin-left: 620px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     cursor: pointer;
   }
+
   .btn-3 span {
     position: relative;
     display: block;
